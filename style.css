@@ -1,7 +1,7 @@
 body {
     font-family: Arial;
     background-color: white;
-    padding-bottom: 1000px;
+    margin: 0;
 }
 
 .header-section-top {
@@ -28,6 +28,7 @@ body {
 
 .middle-section-top {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -93,14 +94,19 @@ a {
 
 .middle-section-bottom {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-left: 267px;
+    margin-left: 295px;
 }
 
 .navigation-text {
     color: hsl(0, 0%, 15%);
     font-weight: bold;
     padding: 20px;
+}
+
+.navigation-text:hover {
+    text-decoration: underline;
 }
 
 .right-section-bottom {
@@ -134,7 +140,7 @@ a {
 
 .hero-image-left {
     width: 952px;
-    height: 911px;
+    height: 920px;
     object-fit: cover;
     object-position: 100%;
 }
@@ -142,7 +148,7 @@ a {
 .hero-image-right {
     top: 60px;
     width: 951px;
-    height: 911px;
+    height: 920px;
     object-fit: cover;
     object-position: 100%;
 }
@@ -153,22 +159,30 @@ a {
 }
 
 .main-title {
-    font-size: 50px;
-    font-weight: 700;
-    margin: 30px 0 30px 0;
+    font-family: 'Segoe UI';
+    font-size: 60px;
+    font-weight: bold;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
-    row-gap: 40px;
+    row-gap: 175px;
+    margin-bottom: 200px;
     place-items: center;
+    justify-self: center;
 }
 
 .grid-item {
     height: 300px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
 }
 
 .grid-image {
@@ -178,5 +192,39 @@ a {
 
 .product-text {
     font-size: 16px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-family:'Trebuchet MS';
+    font-size: 16px;
+}
+
+.add-to-cart {
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 15%);
+    color: white;
     font-weight: 600;
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: hsl(0, 0%, 30%);
+    transition: 0.15s;
+}
+
+.mid-page-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid-page-image {
+    width: 1250px;
+    height: 600px;
+    object-fit: cover;
+    object-position: top;
 }
