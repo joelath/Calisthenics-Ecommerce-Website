@@ -163,50 +163,84 @@ a {
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 50px 0 50px 0;
 }
 
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 175px;
-    margin-bottom: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-bottom: 100px;
     place-items: center;
     justify-self: center;
 }
 
 .grid-item {
-    height: 300px;
-    justify-content: space-evenly;
-    justify-items: center;
-    align-content: space-evenly;
-    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px 20px 20px 20px;
+}
+
+.heart-icon {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    fill: curr;
 }
 
 .grid-image {
+    width: 300px;
     height: 300px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 32px;
+}
 
+.rating-container {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    margin: 0 0 8px 0;
+}
+
+.star-icon {
+    padding: 0 1px;
+    cursor: pointer;
+}
+
+.rating-text {
+    font-size: 16px;
+    margin: 0;
+    padding: 0 4px;
+}
+
+.rating-text:hover {
+    color: crimson;
+    cursor: pointer;
+    transition: 0.05s;
 }
 
 .product-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+    margin: 0 0 8px 0;
 }
 
 .product-price {
     font-family:'Trebuchet MS';
-    font-size: 16px;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0 0 8px 0;
 }
 
 .add-to-cart {
+    padding: 16px 104px;
     border: none;
-    border-radius: 8px;
+    border-radius: 2px;
     background-color: hsl(0, 0%, 15%);
     color: white;
+    font-size: 18px;
     font-weight: 600;
-    padding: 10px 25px 10px 25px;
     cursor: pointer;
 }
 
@@ -223,7 +257,7 @@ a {
 }
 
 .mid-page-image {
-    width: 1250px;
+    width: 1525px;
     height: 600px;
     object-fit: cover;
     object-position: top;
