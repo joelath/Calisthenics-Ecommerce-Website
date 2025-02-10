@@ -4,12 +4,20 @@ body {
     margin: 0;
 }
 
+.site {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
 .header-section-top {
     height: 40px;
+    padding: 0 40px;
 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     position: fixed;
     top: 0;
@@ -18,12 +26,6 @@ body {
     z-index: 100;
 
     background-color: hsl(0, 0%, 15%);
-}
-
-.left-section-top {
-    display: flex;
-    align-items: center;
-    margin-left: 30px;
 }
 
 .middle-section-top {
@@ -35,13 +37,11 @@ body {
 .delivery-text {
     color: white;
     font-size: 12px;
-    margin-left: 145px;
 }
 
 .right-section-top {
     display: flex;
     align-items: center;
-    margin-right: 30px;
 }
 
 .help-text {
@@ -64,10 +64,11 @@ body {
 
 .header-section-bottom {
     height: 60px;
+    padding: 0 40px;
 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     position: fixed;
     top: 40px;
@@ -76,43 +77,54 @@ body {
     z-index: 100;
 
     background-color: white;
-}
 
-a {
-    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color: hsl(0, 0%, 15%);
+    border-bottom-width: 1px;
 }
 
 .left-section-bottom {
     display: flex;
     align-items: center;
-    margin-left: 30px;
 }
 
 .logo {
     width: 50px;
+    margin: 0 10px;
 }
 
 .middle-section-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 295px;
+    margin-left: 9.5%;
 }
 
-.navigation-text {
-    color: hsl(0, 0%, 15%);
+.middle-section-bottom ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.middle-section-bottom a {
+    color: black;
     font-weight: bold;
-    padding: 20px;
+    text-decoration: none;
+    padding: 15px;
 }
 
-.navigation-text:hover {
+.middle-section-bottom li {
+    float: left;
+}
+
+.middle-section-bottom a:hover {
     text-decoration: underline;
 }
 
 .right-section-bottom {
     display: flex;
     align-items: center;
-    margin-right: 30px;
 }
 
 .search-bar {
@@ -169,8 +181,8 @@ a {
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 50px;
     row-gap: 50px;
+    column-gap: 50px;
     margin-bottom: 100px;
     place-items: center;
     justify-self: center;
@@ -185,7 +197,6 @@ a {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    fill: curr;
 }
 
 .grid-image {
@@ -261,4 +272,92 @@ a {
     height: 600px;
     object-fit: cover;
     object-position: top;
+}
+
+.footer-section {
+    margin-top: auto;
+    width: 1903px;
+    height: 270px;
+    background-color: hsl(0, 0%, 15%);
+    padding: 55px 0;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.footer-title {
+    font-family: 'Segoe UI';
+    color: white;
+    margin: 14px 0;
+}
+
+.signup-title {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: white;
+    margin: 14px 0;
+}
+
+.signup-text {
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    color: white;
+    margin: 14px 0;
+}
+
+.email-footer-signup {
+    padding: 10px 100px 10px 10px;
+    font-size: 16px;
+}
+
+.terms-text {
+    font-family: 'Segoe UI';
+    font-size: 10px;
+    color: white;
+    margin: 14px 0;
+}
+
+.terms-text a {
+    color: white;
+}
+
+.footer-contacts-row {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 212px;
+    height: 20px;
+    margin: 14px 0;
+}
+
+.email-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-text-container a {
+    text-decoration: none;
+}
+
+.contact-text {
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    color: white;
+    margin: 0;
+}
+
+.email-icon-container {
+    margin: 0 16px 0 0;
 }
