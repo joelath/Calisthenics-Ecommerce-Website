@@ -6,6 +6,7 @@
     <title>Contact | Cali Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="icons/logo.png">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="site">
@@ -48,9 +49,39 @@
             </div>
         </header>
         <main>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut aliquid doloribus magnam, libero similique fuga est quae cum error nam ex ad, ipsa expedita, exercitationem autem natus nesciunt dolorum distinctio.
-            </p>
+            <div class="form-container">
+                <h1 class="contact-title">CONTACT US</h1>
+                <form class="contact-form">
+                    <label class="required-name-label" for="name">
+                        Your name
+                    </label><br>
+                    <input class="contact-input" type="text" maxlength="80"><br>
+                    <label class="required-email-label" for="name">
+                        Email
+                    </label><br>
+                    <input class="contact-input" type="email" maxlength="80"><br>
+                    <label class="required-email-label" for="email">
+                        Confirm email
+                    </label><br>
+                    <input class="contact-input" type="email" maxlength="80"><br>
+                    <label class="required-topic-label" for="topic">
+                        Topic
+                    </label><br>
+                    <select name="topic" id="contact-topic" maxlength="80"><br>
+                        <option value="select">Select one</option>
+                        <option value="account">Account inquiries</option>
+                        <option value="order">Order status</option>
+                        <option value="product">Product inquiries</option>
+                        <option value="returns">Returns/refund</option>
+                        <option value="other">Other</option>
+                    </select><br>
+                    <label class="required-description-label" for="description">
+                        Description
+                    </label><br>
+                    <textarea required id="contact-description" name="description" maxlength="3000"></textarea><br>
+                    <input class="submit-button" type="submit">
+                </form>
+            </div>
         </main>
         <footer class="footer-section">
             <div class="footer-container">
