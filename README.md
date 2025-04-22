@@ -30,3 +30,4 @@ My focus now is to apply these principles to future projects and learn JavaScrip
 
 You can view the project here:
 
+https://joelath.github.io/Calisthenics-Ecommerce-Website/
