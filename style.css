@@ -156,16 +156,17 @@ a {
 }
 
 .home-hero-image-left {
-    width: 952px;
-    height: 920px;
+    width: 100%;
+    max-width: 952px;
+    height: auto;
     object-fit: cover;
     object-position: 100%;
 }
 
 .home-hero-image-right {
-    top: 60px;
-    width: 951px;
-    height: 920px;
+    width: 100%;
+    max-width: 952px;
+    height: auto;
     object-fit: cover;
     object-position: 50% 100%;
 }
